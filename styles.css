@@ -1,0 +1,32 @@
+#page-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#logo {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    
+}
+
+#hero {
+    
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+
+}
+
+#hero > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#footer-container {
+
+}
+

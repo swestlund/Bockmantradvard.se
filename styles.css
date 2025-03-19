@@ -30,16 +30,16 @@ body {
 
     cursor: pointer;
     transition: background-color 0.3s ease;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px white;
 
 }
 
 #contact-button button:hover {
-    background-color: rgba(0, 128, 0, 0.2);
+    background-color: white;
   }
   #contact-button button:active {
     transform: translateY(0); 
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 2px white;
   }
 
 
@@ -71,14 +71,15 @@ flex-direction: row;
 background-color: rgba(0, 128, 0, 0.3);
 justify-content: space-between;
 align-items: center;
-padding: 20px;
-border: 10px solid rgba(0, 0, 0, 0.107);
+padding: 1rem;
+border: 1px solid rgba(0, 0, 0, 0.107);
 }
 
 #footer-left {
     display: flex;
     flex-direction: column;
    text-align: left;
+   
 }
 
 #footer-right {

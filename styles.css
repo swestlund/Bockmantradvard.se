@@ -91,3 +91,8 @@ position: absolute;
 left: 50%;
 transform: translateX(-50%);
 }
+
+#main-logo img {
+    max-width: 600px;
+    height: auto;
+}

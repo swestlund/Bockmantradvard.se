@@ -1,6 +1,6 @@
 body {
     font-family: 'Helvetica', sans-serif;
-    color: black;
+    color: #FFFFFF;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -12,7 +12,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: whitesmoke
+    background-color: #101820;
 }
 
 img {

@@ -1,82 +1,41 @@
+html {
+    height: 100vh;
+  }
+  
+  body {
+    background: radial-gradient(ellipse at center, #443501 0%,#000000 100%);
+  }
+  
 
-@keyframes goldShimmer {
-    0% {background-position: 0% 50%;}
-    50% {background-position: 100% 50%;}
-    100% {background-position: 0% 50%;}
-}
-
-h1 { 
+  
+  h1 {
     display: flex;
     justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2.5rem;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    
-    /* Main gold effect */
-    background: linear-gradient(
-        90deg, 
-        #BF953F 0%, 
-        #FCF6BA 20%, 
-        #F6E27A 30%, 
-        #D5BE6D 40%,
-        #B4A130 50%, 
-        #F6E27A 60%,
-        #D5BE6D 70%, 
-        #FCF6BA 80%, 
-        #BF953F 100%
-    );
-    background-size: 200% auto;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-    animation: goldShimmer 2m linear infinite;
-    
-    /* Structure and decoration */
-    text-shadow: 0 0 1px rgba(255, 215, 0, 0.5), 0 0 2px rgba(255, 215, 0, 0.3);
-    padding: 20px 30px;
-    margin: 25px auto;
-    position: relative;
-    border: 1px solid transparent;
-    border-image: linear-gradient(
-        to right, 
-        #BF953F, 
-        #FCF6BA, 
-        #F6E27A, 
-        #D5BE6D, 
-        #B4A130
-    );
-    border-image-slice: 1;
-}
+      background: linear-gradient(to bottom, #cfc09f 27%, #ffecb3 40%, #3a2c0f 78%); 
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: #fff;
 
-h1::before {
-    content: '';
-    position: absolute;
-    top: -3px;
-    left: -3px;
-    right: -3px;
-    bottom: -3px;
-    background: linear-gradient(
-        45deg, 
-        #BF953F, 
-        #FCF6BA, 
-        #F6E27A, 
-        #D5BE6D
-    );
-    z-index: -1;
-    filter: blur(10px);
-    opacity: 0.7;
-}
 
-h1::after {
-    content: '';
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    right: -5px;
-    bottom: -5px;
-    border: 1px solid rgba(255, 215, 0, 0.3);
-    border-radius: 1px;
-}
+     /* 
+    font-family: 'Playfair Display', serif;*/
+      position: relative;
+    text-transform: uppercase;  
+    font-size: 9 rem;
+    margin: 0;
+    
+  }
+  
+  h1::after {
+      background: none;
+      content: attr(data-heading) / "";
+      left: 0;
+    top: 0;
+      z-index: -1;
+      position: absolute;
+      text-shadow: 
+      -1px 0 1px #c6bb9f, 
+      0 1px 1px #c6bb9f, 
+      5px 5px 10px rgba(0, 0, 0, 0.4),
+      -5px -5px 10px rgba(0, 0, 0, 0.4);
+  }

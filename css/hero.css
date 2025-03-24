@@ -1,0 +1,11 @@
+#hero {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+#hero > div {
+    max-width: 800px;
+    padding: 0 1rem;
+}
